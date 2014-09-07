@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.9" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="UIAlertController_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rN-42-oFZ">
+                                <rect key="frame" x="245" y="285" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2UZ-PO-OtP"/>
+                                    <constraint firstAttribute="width" constant="110" id="Hs8-2X-GIJ"/>
+                                </constraints>
+                                <state key="normal" title="Press me">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonWasPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yQi-wh-L8g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6rN-42-oFZ" firstAttribute="centerX" secondItem="jyV-Pf-zRb" secondAttribute="centerX" id="5hf-v7-8yy"/>
+                            <constraint firstAttribute="centerX" secondItem="6rN-42-oFZ" secondAttribute="centerX" id="Df8-SD-0pP"/>
+                            <constraint firstItem="6rN-42-oFZ" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="kFN-Kp-dTq"/>
+                            <constraint firstAttribute="centerY" secondItem="6rN-42-oFZ" secondAttribute="centerY" id="yQR-3E-AlS"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="600"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
